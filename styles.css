@@ -1,0 +1,143 @@
+body {
+  font-family: 'Heebo', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #e3f2fd;
+  padding: 30px;
+  border-bottom: 2px solid #90caf9;
+}
+
+h1, h2 {
+  color: #1565c0;
+  margin-bottom: 10px;
+}
+
+p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+ul li {
+  background-color: #bbdefb;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #90caf9;
+}
+
+img {
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+hr {
+  border: dotted #90a4ae 4px;
+  border-bottom: none;
+  width: 5%;
+  margin: 60px auto;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 2px solid #90caf9;
+}
+
+.hobbies-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}
+
+.hobby {
+  width: 180px;
+  text-align: center;
+}
+
+.hobby-tile {
+  width: 100%;
+  height: 130px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.hobby-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+}
+
+
+.tile-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e3f2fd;
+  z-index: 3;
+  transition: opacity 0.4s ease;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.hobby-tile:hover .tile-overlay {
+  opacity: 0;
+}
+
+.hobby p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #1565c0;
+}
+
+/* For Responsiveness */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  img {
+    width: 100px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  ul li {
+    font-size: 14px;
+  }
+}
+
